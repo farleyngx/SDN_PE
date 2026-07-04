@@ -1,0 +1,128 @@
+[
+  {
+    "_id": {
+      "$oid": "64916da37f8a6ac611905603"
+    },
+    "penName": "Opera Gold Fountain Pen Red Medium Nib",
+    "penDescription": "Visconti Fountain Pens. SKU: KP42-01-FPM. Nib Size: M. Nib Material: Stainless steel with PVD Gold. Filling Mechanism: Double Reservoir Power Filler. Body Material: Resin. Trim: Brushed Gold. Capping: Hook Safe Lock. Dimensions: Diameter: 14.3mm. Length: 147.4mm. Weight: 39g. The Opera Gold collection by Visconti is inspired by the rich history of lyric opera and pays homage to legendary composers such as Verdi, Puccini, Mozart, and Rossini. The collection's name is prominently displayed on the front of the ring, symbolizing the strong connection between Visconti and the city of Florence. The sides of the ring feature designs inspired by the intricate bronze tiles created by Brunelleschi and Ghiberti on the north door of the Baptistery of Santa Maria del Fiore. Made in Italy.",
+    "image": "https://cdn2.jomashop.com/media/catalog/product/cache/0ee3019724ce73007b606b54ba535a23/v/i/visconti-opera-gold-fountain-pen-red-medium-nib-kp4201fpm.jpg",
+    "off": 0.5,
+    "pouch": false,
+    "gender": true,
+    "brand": {
+      "$oid": "64916be07f8a6ac6119055fe"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64916de77f8a6ac611905607"
+    },
+    "penName": "Venus White Medium Nib Fountain Pen",
+    "penDescription":"The Venus Collection is a tribute to Botticelli's artwork from the Renaissance.The colours of the pens are inspired by the world famous painting made by the old master.The pens are decorated with a metal ring which is beautifully engraved in the style of the Renaissance. Visconti Venus White fountain pen does not come with ink included. Additionally, it does not include a converter. This means you'll need to purchase either a converter or standard international ink cartridges separately to use the pen.",
+    "image": "https://cdn2.jomashop.com/media/catalog/product/cache/0ee3019724ce73007b606b54ba535a23/v/i/visconti-venus-white-medium-nib-fountain-pen-78300ga66mp.jpg",
+    "off": 0.68,
+    "pouch": false,
+    "gender": false,
+    "brand": {
+      "$oid": "64916be07f8a6ac6119055fe"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64916e0b7f8a6ac61190560a"
+    },
+    "penName": "White Crystalline Ballpoint Pen",
+    "penDescription":"Swarovski Ballpoint Pens. SKU: 5583839. Swarovski White Crystalline Ballpoint Pen. This elegant ballpoint pen features a polished white and silver finish accented with Swarovski’s signature sparkling crystals. Material: Base Metal.",
+    "image": "https://cdn2.jomashop.com/media/catalog/product/cache/9d6243d99187096e972f05545e39058c/s/w/swarovski-white-crystalline-ballpoint-pen-5583839.jpg",
+    "off": 0.35,
+    "gender": false,
+    "pouch": false,
+    "brand": {
+      "$oid": "64916c557f8a6ac611905600"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64916e727f8a6ac611905610"
+    },
+    "penName": "The Meisterstuck Classique Platinum-Coated Fountain Pen and one Pen Pouch Set",
+    "penDescription":"Montblanc Fountain Pens. Meisterstuck series. SKU: 130452. Barcode: 4062037091808. Color: Black. The set includes a Montblanc Meisterstuck Classique platinum-coated fountain pen, crafted from black precious resin with the white Montblanc emblem inlaid on the cap, and a full-grain calfskin Montblanc 1 pen pouch with a zip, featuring a jacquard lining, a compartment for one pen the size of the Meisterstuck Classique or Le Grand, and a Montblanc emblem with a palladium-finished ring.",
+    "image": "https://cdn2.jomashop.com/media/catalog/product/cache/0ee3019724ce73007b606b54ba535a23/m/o/montblanc-the-meisterstuck-classique-platinumcoated-fountain-pen-and-1-pen-pouch-set-130452.jpg",
+    "off": 0.18,
+    "gender": true,
+    "pouch": true,
+    "brand": {
+      "$oid": "64916b3b7f8a6ac6119055fa"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64916ea17f8a6ac611905612"
+    },
+    "penName": "Muses Maria Callas Special Edition Rollerball",
+    "penDescription":"MontBlanc Unisex Rollerball. SKU: 129565. Barcode: 4062037078045. Montblanc Muses Maria Callas Special Edition Rollerball 129565. This pen features a turquoise resin cap and barrel that captures Maria Callas’s elegance, with a platinum-coated clip adorned with a synthetic stone reflecting the Aegean Sea, complemented by laurel leaf patterns and her embossed signature.",
+    "image":"https://cdn2.jomashop.com/media/catalog/product/cache/0ee3019724ce73007b606b54ba535a23/m/o/montblanc-muses-maria-callas-special-edition-rollerball-129565.jpg",
+    "off": 0.35,
+    "gender": true,
+    "pouch": false,
+    "brand": {
+      "$oid": "64916b3b7f8a6ac6119055fa"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64916f047f8a6ac611905616"
+    },
+    "penName": "Crystalline Ballpoint Pen Rose Gold",
+    "penDescription":"A Swarovski Crystalline ballpoint pen crafted in a 18K rose gold-plated body, filled with 540 crystals. Dimensions: 5 5/8 x 3/8",
+    "image":"https://cdn2.jomashop.com/media/catalog/product/cache/0ee3019724ce73007b606b54ba535a23/s/w/swarovski-crystalline-ballpoint-pen-18k-rose-gold-5224390.jpg",
+    "off": 0.37,
+    "gender": false,
+    "pouch": false,
+    "brand": {
+      "$oid": "64916c557f8a6ac611905600"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64916f317f8a6ac611905619"
+    },
+    "penName": "Opera Gold Blue Acrylic Resin Fountain Pen",
+    "penDescription":"Visconti Fountain Pens. SKU: KP42-02-FPF. Nib Size: F. Visconti Opera Gold Blue Acrylic Resin Fountain Pen KP42-02-FPF. Opera Gold, inspired by the history of lyric opera and honoring masters like Verdi, Puccini, Mozart, and Rossini, showcases its name on the ring's front to emphasize the connection between Visconti and Florence, with side designs inspired by Brunelleschi and Ghiberti's bronze tiles on the north door of the Baptistery of Santa Maria del Fiore. Nib: Stainless steel with PVD Gold. Material: Acrylic Resin. Fine Nib.",
+    "image":"https://cdn2.jomashop.com/media/catalog/product/cache/0ee3019724ce73007b606b54ba535a23/v/i/visconti-opera-gold-blue-acrylic-resin-fountain-pen-kp4202fpf.jpg",
+    "off": 0.36,
+    "gender": false,
+    "pouch": false,
+    "brand": {
+      "$oid": "64916be07f8a6ac6119055fe"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64916f877f8a6ac61190561d"
+    },
+    "penName": "NASA Atlantis Ballpoint Pen",
+    "penDescription":"Montegrappa commemorates a monumental milestone in space exploration history with the release of the special edition NASA Atlantis collection. Thirty years since the Space Shuttle embarked on its groundbreaking mission, carrying the first Italian astronaut into space, this collection pays homage to that momentous event. Recalling the awe-inspiring launch of the Space Shuttle in the spring of 1981, Giuseppe Aquila, the owner of Montegrappa, reminisces about watching the historic moment unfold at the age of eleven. Inspired by this transformative era in space exploration, Montegrappa presents the NASA Atlantis collection. Crafted with precision and attention to detail, NASA Atlantis features high-density resin, enamel, and stainless steel elements that echo the sleek and futuristic design of the Space Shuttle. This collection captures the essence of innovation and adventure, inviting enthusiasts to embark on a journey through the cosmos with each stroke of the pen.",
+    "image":"https://cdn2.jomashop.com/media/catalog/product/cache/9d6243d99187096e972f05545e39058c/m/o/montegrappa-nasa-atlantis-ballpoint-pen-isn1rbbp.jpg",
+    "off": 0.58,
+    "gender": true,
+    "pouch": false,
+    "brand": {
+      "$oid": "64916b697f8a6ac6119055fc"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64916fb07f8a6ac61190561f"
+    },
+    "penName": "Meisterstuck Classique Rollerball and Pocket Set",
+    "penDescription":"MontBlanc Rollerball. Meisterstuck series. SKU: 130449. Barcode: 4062037091778. Color: Black. Montblanc Meisterstuck Classique Rollerball and Pocket 5cc Set. The set includes a Meisterstuck classique rollerball with a black precious resin cap and barrel featuring the iconic white Montblanc emblem, along with a Meisterstuck pocket 5cc crafted in black leather with Montblanc's deep shine, offering 5 credit card slots and a long zipped pocket.",
+    "image":"https://cdn2.jomashop.com/media/catalog/product/cache/0ee3019724ce73007b606b54ba535a23/m/o/montblanc-meisterstuck-classique-rollerball-and-pocket-5cc-set-130449.jpg",
+    "off": 0.58,
+    "gender": true,
+    "pouch": true,
+    "brand": {
+      "$oid": "64916b3b7f8a6ac6119055fa"
+    }
+  }
+  ]
