@@ -1,16 +1,12 @@
 const jwt = require("jsonwebtoken");
-const fs = require("fs");
-const path = require("path");
 const bcrypt = require("bcryptjs");
+const Member = require("../../models/Member");
 
-exports.getTokens = (req, res) => {
+exports.getTokens = async (req, res) => {
   const { name, code } = req.body;
 
   try {
-    const filePath = path.join(__dirname, "../../data/members.json");
-    const membersData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-
-    const account = membersData.find((m) => m.name === name);
+    const account = await Member.findOne({ name });
 
     if (!account) {
       return res.status(400).json({ message: "Invalid credentials!" });

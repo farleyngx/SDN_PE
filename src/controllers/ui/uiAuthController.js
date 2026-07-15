@@ -1,18 +1,14 @@
-const fs = require("fs");
-const path = require("path");
 const bcrypt = require("bcryptjs");
+const Member = require("../../models/Member");
 
 exports.getLoginView = (req, res) => {
   res.render("login", { error: null, user: req.session.currentUser || null });
 };
 
-exports.handleLogin = (req, res) => {
+exports.handleLogin = async (req, res) => {
   const { name, code } = req.body;
   try {
-    const filePath = path.join(__dirname, "../../data/members.json");
-    const membersData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-
-    const member = membersData.find((m) => m.name === name);
+    const member = await Member.findOne({ name });
     if (!member) {
       return res.render("login", {
         error: "Invalid User Account Name!",
