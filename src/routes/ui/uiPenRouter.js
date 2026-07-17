@@ -10,6 +10,7 @@ router
   .post(uiPenController.addPen);
 router
   .route("/:penId")
+  .get(uiPenController.getPenDetails)
   .put(uiPenController.updatePen)
   .delete(uiPenController.deletePen);
 module.exports = router;

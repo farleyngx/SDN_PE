@@ -5,12 +5,19 @@ exports.getPenListView = async (req, res) => {
   try {
     const pens = await Pen.find().populate("brand");
     const brands = await Brand.find();
+
+    const successMsg = req.session.successMsg || null;
+    const errorMsg = req.session.errorMsg || null;
+
+    delete req.session.successMsg;
+    delete req.session.errorMsg;
+
     res.render("pens", {
       pens,
       brands,
       user: req.session.currentUser,
-      successMsg: req.query.success || null,
-      errorMsg: req.query.error || null,
+      successMsg,
+      errorMsg,
     });
   } catch (err) {
     res.status(500).send(err.message);
@@ -23,12 +30,12 @@ exports.addPen = async (req, res) => {
       req.body;
 
     if (!/^[A-Za-z\s]+$/.test(penName)) {
-      return res.redirect(
-        "/admin/pens?error=Pen name must contain only letters and space!",
-      );
+      req.session.errorMsg = "Pen name must contain only letters and space!";
+      return res.redirect("/admin/pens");
     }
     if (await Pen.findOne({ penName })) {
-      return res.redirect("/admin/pens?error=Pen name already exists!");
+      req.session.errorMsg = "Pen name already exists!";
+      return res.redirect("/admin/pens");
     }
 
     await new Pen({
@@ -41,9 +48,11 @@ exports.addPen = async (req, res) => {
       brand,
     }).save();
 
-    res.redirect("/admin/pens?success=Pen added successfully!");
+    req.session.successMsg = "Pen added successfully!";
+    res.redirect("/admin/pens");
   } catch (err) {
-    res.redirect(`/admin/pens?error=${encodeURIComponent(err.message)}`);
+    req.session.errorMsg = err.message;
+    res.redirect("/admin/pens");
   }
 };
 
@@ -53,12 +62,12 @@ exports.updatePen = async (req, res) => {
       req.body;
 
     if (!/^[A-Za-z\s]+$/.test(penName)) {
-      return res.redirect(
-        "/admin/pens?error=Pen name must contain only letters and space!",
-      );
+      req.session.errorMsg = "Pen name must contain only letters and space!";
+      return res.redirect(`/admin/pens/${req.params.penId}`);
     }
     if (await Pen.findOne({ penName, _id: { $ne: req.params.penId } })) {
-      return res.redirect("/admin/pens?error=Pen name already exists!");
+      req.session.errorMsg = "Pen name already exists!";
+      return res.redirect(`/admin/pens/${req.params.penId}`);
     }
 
     await Pen.findByIdAndUpdate(req.params.penId, {
@@ -70,17 +79,47 @@ exports.updatePen = async (req, res) => {
       gender: gender === "on",
       brand,
     });
-    res.redirect("/admin/pens?success=Pen updated successfully!");
+    req.session.successMsg = "Pen updated successfully!";
+    res.redirect(`/admin/pens/${req.params.penId}`);
   } catch (err) {
-    res.redirect(`/admin/pens?error=${encodeURIComponent(err.message)}`);
+    req.session.errorMsg = err.message;
+    res.redirect(`/admin/pens/${req.params.penId}`);
   }
 };
 
 exports.deletePen = async (req, res) => {
   try {
     await Pen.findByIdAndDelete(req.params.penId);
-    res.redirect("/admin/pens?success=Pen deleted successfully!");
+    req.session.successMsg = "Pen deleted successfully!";
+    res.redirect("/admin/pens");
   } catch (err) {
-    res.redirect(`/admin/pens?error=${encodeURIComponent(err.message)}`);
+    req.session.errorMsg = err.message;
+    res.redirect("/admin/pens");
+  }
+};
+
+exports.getPenDetails = async (req, res) => {
+  try {
+    const pen = await Pen.findById(req.params.penId).populate("brand");
+    if (!pen) {
+      return res.status(404).send("Pen not found");
+    }
+    const brands = await Brand.find();
+
+    const successMsg = req.session.successMsg || null;
+    const errorMsg = req.session.errorMsg || null;
+
+    delete req.session.successMsg;
+    delete req.session.errorMsg;
+
+    res.render("detail", {
+      pen,
+      brands,
+      user: req.session.currentUser,
+      successMsg,
+      errorMsg,
+    });
+  } catch (err) {
+    res.status(500).send(err.message);
   }
 };

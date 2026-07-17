@@ -19,7 +19,7 @@ exports.handleLogin = async (req, res) => {
     const isMatch = bcrypt.compareSync(code, member.code);
     if (!isMatch) {
       return res.render("login", {
-        error: "Incorrect member code secret!",
+        error: "Incorrect member code!",
         user: null,
       });
     }
